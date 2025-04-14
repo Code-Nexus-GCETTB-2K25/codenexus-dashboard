@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import { redirect } from 'next/navigation';
 
 export default function LoginPage() {
     const [username, setUsername] = useState('');
@@ -13,11 +12,12 @@ export default function LoginPage() {
         const res = await fetch('/api/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
             body: JSON.stringify({ username, password }),
         });
 
         if (res.ok) {
-            redirect('/');
+            window.location.href = '/';
         } else {
             setError('Invalid credentials');
         }
