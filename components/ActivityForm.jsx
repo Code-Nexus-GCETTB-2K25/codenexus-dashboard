@@ -83,13 +83,13 @@ export default function ActivityForm({ initialData, onSubmit, onCancel }) {
                     <button
                         type="button"
                         onClick={onCancel}
-                        className="px-4 py-2 border border-gray-600 rounded-md text-gray-300 hover:bg-gray-600"
+                        className="px-4 py-2 border border-gray-600 rounded-md text-gray-300 hover:bg-gray-600 cursor-pointer"
                     >
                         Cancel
                     </button>
                     <button
                         type="submit"
-                        className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                        className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer"
                     >
                         {initialData ? 'Update Activity' : 'Add Activity'}
                     </button>

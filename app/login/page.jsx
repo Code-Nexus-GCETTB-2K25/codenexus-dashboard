@@ -42,7 +42,7 @@ export default function LoginPage() {
                     onChange={(e) => setPassword(e.target.value)}
                     className="w-full p-2 mb-4 rounded bg-gray-700 focus:outline-none"
                 />
-                <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded">
+                <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded cursor-pointer">
                     Login
                 </button>
             </form>

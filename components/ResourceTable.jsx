@@ -37,13 +37,13 @@ export default function ResourceTable({ resources, loading, onEdit, onDelete }) 
                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                                 <button
                                     onClick={() => onEdit(resource)}
-                                    className="text-indigo-400 hover:text-indigo-600 mr-3"
+                                    className="text-indigo-400 hover:text-indigo-600 mr-3 cursor-pointer"
                                 >
                                     Edit
                                 </button>
                                 <button
                                     onClick={() => onDelete(resource._id)}
-                                    className="text-red-400 hover:text-red-600"
+                                    className="text-red-400 hover:text-red-600 cursor-pointer"
                                 >
                                     Delete
                                 </button>

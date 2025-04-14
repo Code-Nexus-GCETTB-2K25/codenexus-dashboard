@@ -34,19 +34,19 @@ export default function EventTable({ events, loading, onEdit, onDelete }) {
                                 <Link
                                     href={event.link}
                                     target="_blank"
-                                    className="text-blue-400 hover:text-blue-600 mr-3"
+                                    className="text-blue-400 hover:text-blue-600 mr-3 cursor-pointer"
                                 >
                                     View
                                 </Link>
                                 <button
                                     onClick={() => onEdit(event)}
-                                    className="text-indigo-400 hover:text-indigo-600 mr-3"
+                                    className="text-indigo-400 hover:text-indigo-600 mr-3 cursor-pointer"
                                 >
                                     Edit
                                 </button>
                                 <button
                                     onClick={() => onDelete(event._id)}
-                                    className="text-red-400 hover:text-red-600"
+                                    className="text-red-400 hover:text-red-600 cursor-pointer"
                                 >
                                     Delete
                                 </button>
