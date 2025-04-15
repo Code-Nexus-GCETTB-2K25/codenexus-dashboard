@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <div className="w-64 bg-gray-800 text-white">
             <Sidebar />
           </div>
-          <div className="flex-1 overflow-auto">
+          <div className="flex-1 overflow-auto bg-gray-950">
             {children}
           </div>
         </div>

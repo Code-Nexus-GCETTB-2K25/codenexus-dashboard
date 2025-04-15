@@ -4,8 +4,8 @@ import { ArrowRight } from 'lucide-react';
 export default function Dashboard() {
   return (
     <div className="p-8">
-      <div className='flex items-center gap-3 mb-6'>
-        <h1 className="text-3xl font-bold">CodeNexus Dashboard</h1>
+      <div className='flex items-center gap-3 mb-6 text-white'>
+        <h1 className="text-3xl font-bold ">CodeNexus Dashboard</h1>
         <ArrowRight width={32} height={32} className='animate-pulse'/>
         <Link href={"https://code-nexus-gcettb.vercel.app/"} className='text-xl font-bold underline'>CodeNexus Site</Link>
       </div>
