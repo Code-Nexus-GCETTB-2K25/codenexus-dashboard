@@ -1,4 +1,5 @@
 import { Loader2 } from "lucide-react"
+import Link from "next/link"
 
 export default function ResourceTable({ resources, loading, onEdit, onDelete }) {
     if (loading) {
