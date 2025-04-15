@@ -31,7 +31,7 @@ export default function ResourceTable({ resources, loading, onEdit, onDelete }) 
                                     <span className="text-2xl mr-2">{resource.icon}</span>
                                     <div>
                                         <div className="font-medium text-white">{resource.title}</div>
-                                        <Link href={resource.link} className="text-sm text-gray-400">{resource.link}</Link>
+                                        <Link href={resource.link} className="text-sm text-blue-500">View</Link>
                                     </div>
                                 </div>
                             </td>
