@@ -124,7 +124,7 @@ export default function MemberForm({ initialData, onSubmit, onCancel }) {
                         type="submit"
                         className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer"
                     >
-                        {initialData ? 'Update Member' : 'Add Member'}
+                        {initialData ? 'Update' : 'Add'}
                     </button>
                 </div>
             </form>

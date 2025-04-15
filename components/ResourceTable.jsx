@@ -1,6 +1,8 @@
+import { Loader2 } from "lucide-react"
+
 export default function ResourceTable({ resources, loading, onEdit, onDelete }) {
     if (loading) {
-        return <div className="text-center py-8 text-white">Loading resources...</div>
+        return <div className="text-center py-8 text-white flex items-center justify-center gap-2"><Loader2 className="animate-spin"/>Loading resources...</div>
     }
 
     if (resources.length === 0) {

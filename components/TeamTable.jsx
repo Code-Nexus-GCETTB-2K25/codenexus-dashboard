@@ -1,10 +1,12 @@
+import { Loader2 } from "lucide-react"
+
 export default function TeamTable({ members, loading, onEdit, onDelete }) {
     if (loading) {
-        return <div className="text-center py-8 text-white">Loading team members...</div>
+        return <div className="text-center py-8 text-white flex items-center justify-center gap-2"><Loader2 className="animate-spin"/>Loading...</div>
     }
 
     if (members.length === 0) {
-        return <div className="text-center py-8 text-white">No team members found. Add one to get started!</div>
+        return <div className="text-center py-8 text-white">No members found. Add one to get started!</div>
     }
 
     return (

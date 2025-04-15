@@ -1,8 +1,10 @@
 'use client'
 
+import { Loader2 } from "lucide-react"
+
 export default function ActivityTable({ activities, loading, onEdit, onDelete }) {
     if (loading) {
-        return <div className="text-center py-8 text-white">Loading activities...</div>
+        return <div className="text-center py-8 text-white flex items-center justify-center gap-2"><Loader2 className="animate-spin"/>Loading activities...</div>
     }
 
     if (activities.length === 0) {

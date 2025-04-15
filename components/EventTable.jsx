@@ -1,10 +1,11 @@
 'use client'
 
+import { Loader2 } from 'lucide-react'
 import Link from 'next/link'
 
 export default function EventTable({ events, loading, onEdit, onDelete }) {
     if (loading) {
-        return <div className="text-center py-8 text-white">Loading events...</div>
+        return <div className="text-center py-8 text-white flex items-center justify-center gap-2"><Loader2 className='animate-spin'/>Loading events...</div>
     }
 
     if (events.length === 0) {
